@@ -1,5 +1,5 @@
 # WebStorm project files
-.idea/
+.idea
 *.iml
 
 # Node.js dependencies
