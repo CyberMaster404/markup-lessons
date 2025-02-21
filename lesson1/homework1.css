@@ -1,0 +1,15 @@
+a {
+  color: green;
+}
+
+p {
+  color: blue;
+}
+
+a p {
+  color: red;
+}
+
+p a {
+  color: yellow;
+}
