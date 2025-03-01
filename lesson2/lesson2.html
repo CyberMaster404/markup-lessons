@@ -3,46 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <title>lesson 2</title>
-    <link href="classwork2.css" rel="stylesheet" />
-  </head>
-  <body>
-    <!--    <div class="rect blue"></div>-->
-    <!--    <div class="rect green"></div>-->
-    <!--    <div class="rect blue circle" id="border"></div>-->
-    <!--    <div class="rect red circle"></div>-->
-    <!--    <a class="Button" href="#">click me</a>-->
-    <!--    <style>-->
-    <!--      .Button {-->
-    <!--        text-decoration: none;-->
-    <!--        background-color: blue;-->
-    <!--        color: yellow;-->
-    <!--        padding: 15px 32px;-->
-    <!--        border-radius: 10px;-->
-    <!--      }-->
-    <!--    </style>-->
-    <div class="registration">
-      <h1>Registration</h1>
-      <form action="#">
-        <input name="firstname" placeholder="First Name" type="text" />
-        <input name="email" placeholder="email" type="text" />
-        <input name="password" placeholder="password" type="text" />
-        <input name="phone number" placeholder="phone number" type="tel" />
-      </form>
-    </div>
-  </body>
-  <style>
-    .registration {
+    <style>
+      .registration {
         width: 400px;
         padding: 20px;
         background-color: black;
-    }
+      }
 
-    .registration h1 {
+      .registration h1 {
         text-align: center;
         color: #b9b9b9;
-    }
+      }
 
-    .registration input {
+      .registration input {
         width: 200px;
         height: 40px;
         margin: 10px;
@@ -51,39 +24,71 @@
         border: none;
         border-bottom: 1px solid #b9b9b9;
         color: #b9b9b9;
-    }
+      }
 
-    .registration input[type=password] {
-        color: red
-    }
+      .registration input[type="password"] {
+        color: red;
+      }
 
-    phone number {
-        color: #b9b9b9;
-    }
+      .registration .phone-number {
+        color: blue;
+      }
+    </style>
+    <link href="classwork2.css" rel="stylesheet" />
+    <link href="classwork2-rect-circle.css" rel="stylesheet" />
+    <link href="button.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div
+      id="outer"
+      style="border: 30px solid green; width: 500px; margin-top: 20px"
+    >
+      <div
+        id="inner"
+        style="border: 30px solid red; padding: 50px; margin: 30px"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum iste
+        neque perspiciatis quam repellat voluptatum! Consequatur cumque debitis
+        inventore ipsam ipsum odit perspiciatis? Ab assumenda aut blanditiis
+        cupiditate debitis dolores earum esse et explicabo fugiat illum iure,
+        endis provident quae quas reprehenderit sunt tenetur veritatis. Ab
+        atque, autem blanditiis commodi consequuntur cupiditate dolorem fuga in
+        inventore libero neque, odit, provident repellendus reprehenderit rerum
+        sed sit sunt veritatis voluptatem voluptatibus? Atque beatae blanditiis
+        dicta dolorum eum eveniet facilis laboriosam nisi omnis placeat, quam
+        quas quidem similique suscipit temporibus, voluptates voluptatum. Ab
+        consequatur, earum eos excepturi inventore minima obcaecati reiciendis
+        sed sequi unde?
+      </div>
+    </div>
 
-    .input
-
-    /*.rect {*/
-    /*    width: 100px;*/
-    /*    height: 100px;*/
-    /*    background-color: blue;*/
-
-    /*}*/
-
-    /*{*/
-    /*    background-color: green*/
-    /*;*/
-    /*}*/
-    /*{*/
-    /*    background-color: blue*/
-    /*;*/
-    /*}*/
-    /*.circle {*/
-    /*    border-radius: 50%;*/
-    /*}*/
-
-    /*#border {*/
-    /*    border: 10px dashed coral;*/
-    /*}*/
-  </style>
+    <div class="registration">
+      <h1>Registration</h1>
+      <form action="#">
+        <input name="firstname" placeholder="First Name" type="text" />
+        <input name="email" placeholder="Email" type="text" />
+        <input name="password" placeholder="Password" type="password" />
+        <input
+          class="phone-number"
+          name="phoneNumber"
+          placeholder="Phone Number"
+          type="tel"
+        />
+      </form>
+    </div>
+    <hr />
+    <p>p1</p>
+    <p class="super-paragraph">p2</p>
+    <p class="dinosaur">p3</p>
+    <hr />
+    <div class="rect blue"></div>
+    <div class="rect green"></div>
+    <div class="rect" id="rect"></div>
+    <div class="rect"></div>
+    <div class="rect"></div>
+    <div class="rect blue circle" id="border"></div>
+    <div class="rect red circle"></div>
+    <hr />
+    <a class="button" href="#">click me</a>
+  </body>
 </html>
