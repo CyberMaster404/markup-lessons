@@ -8,10 +8,12 @@
     />
     <meta content="ie=edge" http-equiv="X-UA-Compatible" />
     <title>Lesson3</title>
-    <link href="lesson3.css" rel="css" />
+    <link href="lesson3.css" rel="stylesheet" />
     <style>
       * {
         margin: 0;
+        padding: 0;
+        box-sizing: border-box;
       }
 
       ul {
@@ -21,9 +23,10 @@
       .navbar {
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
         background-color: green;
         color: white;
+        padding: 10px 20px;
       }
 
       .nav-links {
@@ -36,48 +39,41 @@
       }
 
       .nav-links .link {
-        margin-left: 10px;
-        color: green;
+        position: relative;
       }
 
       .nav-links .link a {
         text-decoration: none;
-        color: red;
+        color: white;
+        padding: 10px;
+        display: block;
       }
 
-      h1 {
-        color: cyan;
+      .dropdown {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: purple;
+        min-width: 150px;
       }
 
-      li {
-        color: red;
-        text-decoration: none;
+      .dropdown .link {
+        margin: 0;
       }
 
-      .text:hover {
-        color: red;
-        font-size: 50px;
+      .dropdown .link a {
+        color: white;
+        padding: 10px;
+        display: block;
       }
 
-      .text:nth-of-type(2) {
-        color: blue;
-      }
-
-      .text:last-of-type {
-        color: green;
-      }
-
-      .text:first-of-type {
-        color: yellow;
+      .link:hover .dropdown {
+        display: block;
       }
     </style>
   </head>
   <body>
-    <h1 class="text">text</h1>
-    <h1 class="text">text</h1>
-    <h1 class="text">text</h1>
-    <h1 class="text">text</h1>
-    <h1 class="text">text</h1>
     <nav class="navbar">
       <div class="logo">
         <h1>Logo</h1>
@@ -91,11 +87,22 @@
         </li>
         <li class="link">
           <a href="#">Products</a>
-        </li>
-        <li class="link">
-          <a href="#">Location</a>
+          <ul class="dropdown">
+            <li class="link">
+              <a href="#">Buy</a>
+            </li>
+            <li class="link">
+              <a href="#">Location</a>
+            </li>
+          </ul>
         </li>
       </ul>
     </nav>
+    <hr />
+    <h1 class="text">text</h1>
+    <h1 class="text">text</h1>
+    <h1 class="text">text</h1>
+    <h1 class="text">text</h1>
+    <h1 class="text">text</h1>
   </body>
 </html>

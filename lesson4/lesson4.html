@@ -5,13 +5,58 @@
     <title>Lesson 4</title>
     <link href="lesson4.css" rel="stylesheet" />
     <style>
-      .element2 {
-        color: green;
+      .Tree {
+        border-radius: 50%;
+      }
+
+      .leaf {
+        width: 100px;
+        height: 150px;
+        background-color: green;
+        border-radius: 50%;
+      }
+
+      .tree-trunk {
+        background: saddlebrown;
+        width: 40px;
+        height: 50px;
+        margin-left: 30px;
+        margin-top: -5px;
+      }
+
+      .desk {
+        width: 100px;
+        height: 40px;
+        background-color: brown;
+      }
+
+      .table {
+        margin-left: 150px;
+      }
+
+      .leg {
+        width: 10px;
+        height: 50px;
+        background-color: brown;
+        display: inline-block;
+      }
+
+      .leg:nth-of-type(2) {
+        margin-left: 76px;
       }
     </style>
   </head>
   <body>
-    <div class="element1">Element 1</div>
-    <div class="element2">Element 2</div>
+    <div class="Tree">
+      <div class="leaf"></div>
+      <div class="tree-trunk"></div>
+    </div>
+    <div class="table">
+      <div class="desk"></div>
+      <div class="legs">
+        <div class="leg"></div>
+        <div class="leg"></div>
+      </div>
+    </div>
   </body>
 </html>
