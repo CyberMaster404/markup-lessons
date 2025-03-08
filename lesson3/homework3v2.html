@@ -1,10 +1,74 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Homework 3</title>
-</head>
-<body>
+    <style>
+      .link:last-of-type {
+        color: red;
+      }
 
-</body>
+      .link:first-of-type {
+        color: green;
+      }
+
+      .link {
+        text-decoration: none;
+      }
+
+      .parent {
+        border: 1px solid red;
+        padding: 30px;
+      }
+
+      .child {
+        border: 1px solid green;
+        margin: 30px;
+      }
+
+      body {
+        background: linear-gradient(to right, #ff7e5f, #feb47b);
+      }
+
+      .block-example {
+        border: 1px solid blue;
+        width: 150px;
+        padding: 0;
+        margin: 0;
+        /*display: inline;*/
+      }
+
+      .inline-example {
+        border: 1px solid green;
+        /*display: block;*/
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <a class="link" href="#"> click me 1</a>
+      <a class="link" href="#"> click me 2</a>
+      <a class="link" href="#"> click me 3</a>
+      <a class="link" href="#"> click me 4</a>
+    </div>
+    <hr />
+    <div class="parent">
+      <div class="child">Child text</div>
+    </div>
+    <hr />
+    <p class="block-example">block element 1</p>
+    <p class="block-example">block element 2</p>
+    <p class="block-example">block element 1</p>
+    <p class="block-example">block element 2</p>
+    <p class="block-example">block element 1</p>
+    <p class="block-example">block element 2</p>
+    <p class="block-example">block element 1</p>
+    <p class="block-example">block element 2</p>
+    <span class="inline-example">row element 1</span>
+    <span class="inline-example">row element 2</span>
+    <span class="inline-example">row element 1</span>
+    <span class="inline-example">row element 2</span>
+    <span class="inline-example">row element 1</span>
+    <span class="inline-example">row element 2</span>
+  </body>
 </html>
