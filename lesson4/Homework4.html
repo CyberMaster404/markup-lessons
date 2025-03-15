@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+      name="viewport"
+    />
+    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+    <title>Lesson4</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      ul {
+        list-style: none;
+      }
+
+      .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: green;
+        color: white;
+        padding: 10px 20px;
+      }
+
+      .nav-links {
+        display: flex;
+        color: red;
+      }
+
+      .nav-links {
+        color: red;
+      }
+
+      .nav-links .link {
+        position: relative;
+      }
+
+      .nav-links .link a {
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        display: block;
+      }
+
+      .dropdown {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: purple;
+        min-width: 150px;
+      }
+
+      .dropdown .link {
+        margin: 0;
+      }
+
+      .dropdown .link a {
+        color: white;
+        padding: 10px;
+        display: block;
+      }
+      .dropdown h1{
+          color:blue;
+      }
+
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <h1 class="dropdown">Home</h1>
+      </div>
+      <ul class="nav-links">
+        <li class="link">
+          <a href="#">Products</a>
+        </li>
+        <li class="link">
+          <a href="#">Categories</a>
+        </li>
+        <li class="link">
+          <a href="#">Orders</a>
+          <ul class="dropdown">
+            <li class="link">
+              <a href="#">Buy</a>
+            </li>
+          </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <hr />
+    <h1 class="Text">Computer</h1>
+    <h2 class="Text">Laptops</h2>
+    <h2 class="Text">Cameras</h2>
+    <h2 class="Text">Stmartphones</h2>
+    <h2 class="Text">Scaners</h2>
+  </body>
+</html>
