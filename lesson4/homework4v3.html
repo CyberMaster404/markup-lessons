@@ -3,9 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <title>Homework 4 v3</title>
-    <style></style>
+    <style>
+      .parent {
+        padding: 30px;
+        width: 700px;
+        height: 700px;
+        background-color: darkseagreen;
+      }
+
+      .child {
+        /*display: inline-block;*/
+        width: 200px;
+        height: 200px;
+        margin: 20px;
+        /*background-color: lightpink;*/
+        font-size: 40px;
+        font-weight: bold;
+      }
+
+      .child1 {
+        position: absolute;
+        left: 300px;
+        top: 300px;
+        background-color: #feb47b;
+        z-index: 5;
+      }
+
+      .child2 {
+        position: absolute;
+        left: 200px;
+        top: 200px;
+        background-color: skyblue;
+        z-index: 3;
+      }
+    </style>
   </head>
   <body>
-    <div></div>
+    <div class="parent">
+      <div class="child child1">Child 1</div>
+      <div class="child child2">Child 2</div>
+    </div>
   </body>
 </html>
