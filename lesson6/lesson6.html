@@ -3,7 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <title>Lesson 6</title>
-    <style></style>
+    <style>
+      .card {
+        width: 150px;
+        height: 200px;
+        background-color: red;
+        margin: 10px;
+      }
+
+      .container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+
+      .center {
+        width: 500px;
+        height: 500px;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+    </div>
+    <div class="center">
+      <div class="card"></div>
+    </div>
+  </body>
 </html>
