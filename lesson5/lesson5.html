@@ -3,102 +3,101 @@
   <head>
     <meta charset="UTF-8" />
     <title>Lesson 5</title>
-    <style></style>
+    <style>
+      .move1 {
+          width: 100px;
+          height: 100px;
+          animation: move 5s linear infinite;
+          position: absolute;
+          border: 3px dotted black;
+          background: rgb(131, 58, 180);
+          background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+      }
+
+      .move2 {
+          width: 100px;
+          height: 100px;
+          background: green;
+          animation: move2 5s linear infinite;
+          position: absolute;
+          border: 3px dotted black;
+      }
+
+      @keyframes move {
+          0% {
+              top: 0;
+              left: 200px;
+              border-radius: 0;
+              transform: rotate(0deg);
+          rotateX(0 deg);
+          }
+          25% {
+              left: 400px;
+              top: 0;
+              border-radius: 10%;
+          }
+
+          50% {
+              left: 400px;
+              top: 200px;
+              border-radius: 20%;
+              transform: rotate(180deg) rotateX(180deg) scale(4);
+          }
+          75% {
+              left: 200px;
+              top: 200px;
+              border-radius: 30%;
+          }
+
+          100% {
+              left: 200px;
+              top: 0;
+              border-radius: 50%;
+              transform: rotate(360deg);
+          }
+      }
+
+      @keyframes move2 {
+          0% {
+              top: 0;
+              left: 0;
+              border-radius: 0;
+              background-color: gray;
+          }
+          25% {
+              left: 200px;
+              top: 0;
+              border-radius: 10%;
+              background-color: purple;
+          }
+
+          50% {
+              left: 200px;
+              top: 200px;
+              border-radius: 20%;
+              background-color: skyblue;
+              transform: rotate(180deg);
+          }
+
+          75% {
+              left: 0;
+              top: 200px;
+              border-radius: 30%;
+              background-color: blue;
+          }
+
+          100% {
+              left: 0;
+              top: 0;
+              border-radius: 50%;
+              background-color: yellow;
+              transform: rotate(360deg);
+          }
+      }
+    </style>
   </head>
   <body>
     <div class="move1"></div>
     <div class="move2"></div>
   </body>
-  <style>
-    .move1 {
-        width: 100px;
-        height: 100px;
-        animation: move 5s linear infinite;
-        position: absolute;
-        border: 3px dotted black;
-        background: rgb(131, 58, 180);
-        background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
-    }
-
-    .move2 {
-        width: 100px;
-        height: 100px;
-        background: green;
-        animation: move2 5s linear infinite;
-        position: absolute;
-        border: 3px dotted black;
-    }
-
-    @keyframes move {
-        0% {
-            top: 0;
-            left: 200px;
-            border-radius: 0;
-            transform: rotate(0deg);
-        rotateX(0 deg);
-        }
-        25% {
-            left: 400px;
-            top: 0;
-            border-radius: 10%;
-        }
-
-        50% {
-            left: 400px;
-            top: 200px;
-            border-radius: 20%;
-            transform: rotate(180deg) rotateX(180deg) scale(4);
-        }
-        75% {
-            left: 200px;
-            top: 200px;
-            border-radius: 30%;
-        }
-
-        100% {
-            left: 200px;
-            top: 0;
-            border-radius: 50%;
-            transform: rotate(360deg);
-        }
-    }
-
-    @keyframes move2 {
-        0% {
-            top: 0;
-            left: 0;
-            border-radius: 0;
-            background-color: gray;
-        }
-        25% {
-            left: 200px;
-            top: 0;
-            border-radius: 10%;
-            background-color: purple;
-        }
-
-        50% {
-            left: 200px;
-            top: 200px;
-            border-radius: 20%;
-            background-color: skyblue;
-            transform: rotate(180deg);
-        }
-
-        75% {
-            left: 0;
-            top: 200px;
-            border-radius: 30%;
-            background-color: blue;
-        }
-
-        100% {
-            left: 0;
-            top: 0;
-            border-radius: 50%;
-            background-color: yellow;
-            transform: rotate(360deg);
-        }
-    }
-  </style>
 </html>
